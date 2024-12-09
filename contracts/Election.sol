@@ -78,6 +78,8 @@ contract Election {
         electionClosed = true;
     }
 
+
+
     function getWinner() public view returns (string memory) {
         require(electionClosed, "Election is not closed yet");
         uint256 winningVoteCount = 0;
